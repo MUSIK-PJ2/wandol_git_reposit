@@ -11,6 +11,7 @@ import org.springframework.core.io.support.ResourcePropertySource;
 
 public class MainClass {
 	public static void main(String[] args) {
+		System.out.println(1);
 		ConfigurableApplicationContext ctx = new GenericXmlApplicationContext();
 		ConfigurableEnvironment env = ctx.getEnvironment();
 		MutablePropertySources pro = env.getPropertySources();
